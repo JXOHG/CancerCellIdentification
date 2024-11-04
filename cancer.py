@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report, roc_auc_score, RocCurveDisplay
-import tensorflow.keras
+import tensorflow as tf
 
 # Load the dataset
 dataset = pd.read_csv('cancer.csv')
@@ -17,7 +17,7 @@ from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
 
 # Build the model
-import tensorflow as tf
+
 
 
 model = tf.keras.models.Sequential()
