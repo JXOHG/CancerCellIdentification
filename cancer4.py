@@ -43,6 +43,8 @@ param_grid_xgb = {
     'n_estimators': [50, 100],
     'learning_rate': [0.01, 0.1],
     'max_depth': [3, 5],
+    'alpha': [0.01, 0.1],  # L1 regularization
+    'lambda': [0.01, 0.1]  # L2 regularization
 }
 
 
